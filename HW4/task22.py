@@ -25,7 +25,7 @@ def intersect(lst_a: list, lst_b:list) -> list:
             min_count = min(lst_a.count(item), lst_b.count(item))
             lst_c += [item] * min_count
     return sorted(lst_c)
-3
+
 
 def intersectc(lst_a: list, lst_b:list) -> list:
     return sorted(list((Counter(lst_a) & Counter(lst_b)).elements()))
